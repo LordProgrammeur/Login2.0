@@ -4,8 +4,8 @@
             require_once "views/index.view.php";
         }
         
-        public function ours(){
-            require_once "views/ours.view.php";
+        public function registro(){
+            require_once "views/registro.view.php";
         }
     }
 

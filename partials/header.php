@@ -15,9 +15,9 @@
             background-repeat: no-repeat;
         } */
 
-        .login{
+        /* .login{
             background: linear-gradient(#70d0df, #e2e2e2, #70d0df);
-        }
+        } */
         footer{
             background-color: #70d0df;
         }
