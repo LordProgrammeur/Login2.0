@@ -4,15 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet-Stylo</title>
+    <!-- <link rel="stylesheet" href="assets/david/css/styles.css"> -->
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/david/css/styles.css">
-    <style>
-        .bg{
-            background-image: url(assets/david/img/imgLog.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-    </style>
 </head>
 <header>
     <?php include 'partials/header.php'?>
@@ -22,8 +15,8 @@
     <main>
         <div class="container w-75 rounded shadow login mt-4 mb-4">
             <div class="row align-items-stretch">
-                <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
-
+                <div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                        <div class="bg-p"></div>
                 </div>
                 <div class="col p-5 rounded-end">
                     <div class="text-end">

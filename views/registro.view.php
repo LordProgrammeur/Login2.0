@@ -5,18 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/david/css/styles.css">
-    <style>
-        .bg{
-            background-image: url(assets/david/img/gato.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-    </style>
 </head>
 <header>
     <?php include 'partials/header.php'?>
 </header> 
+<!-- <link rel="stylesheet" href="assets/david/css/styles.css"> -->
 <body>
 
     <h1>Registro</h1>
@@ -24,12 +17,12 @@
     <?php if(!empty($message)): ?>
         <p><?= $message; ?></p>
     <?php endif; ?>
-
+    
     <main>
         <div class="container w-75 rounded shadow login mt-4 mb-4">
             <div class="row align-items-stretch">
-                <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
-
+                <div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded p-3">
+                    <div class="bg"></div>
                 </div>
                 <div class="col p-5 rounded-end">
                     <div class="text-end">
