@@ -18,9 +18,7 @@
     <?php include 'partials/header.php'?>
 </header> 
 <body>
-<!-- <nav>
-    <a href="?c=Landing&a=ours">Nosotros</a>
-</nav> -->
+    
 <div class="container mt-4 seccion1">
     <div class="row justify-content-between py-4">
         <div class="col-12 col-lg-4 ">

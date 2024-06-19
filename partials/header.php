@@ -51,7 +51,7 @@
                         </ul>
                     </li>
                 </ul>   
-                <a class="d-flex ms-auto" href="?c=Login">Inicio Sesión</a>
+                <a class="d-flex ms-auto" href="index.php?controller=Users&action=mostrarFormularioLogin">Iniciar Sesión</a>
             </div>
         </div>
     </header>

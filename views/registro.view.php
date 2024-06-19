@@ -14,9 +14,6 @@
 
     <h1>Registro</h1>
     <h3>Soy Resgitro</h3>
-    <?php if(!empty($message)): ?>
-        <p><?= $message; ?></p>
-    <?php endif; ?>
     
     <main>
         <div class="container w-75 rounded shadow login mt-4 mb-4">
@@ -30,23 +27,24 @@
                     </div>
                     <h2 class="fw-bold text-center py-5">Ingresa tus datos</h2>
                     <!--Registro datos-->
-                    <form action="registro-login.php" method="post">
+                    <form action="index.php?controller=usuario&action=procesarRegistro" method="post">
                         <div class="mb-4">
-                            <label for="email" class="form-label">Correo Electronico</label>
+                            <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="" required>
                         </div>
                         <div class="mb-4">
-                            <label for="password" class="form-label">Crear Contraseña</label required>
-                            <input type="password" class="form-control" name="password" id="">
+                            <label for="password" class="form-label">Crear Contraseña</label>
+                            <input type="password" class="form-control" name="password" id="" required>
                         </div>
                         <div class="mb-4">
                             <label for="password" class="form-label">Repetir Contraseña</label required>
-                            <input type="password" class="form-control" name="confirm-password" id="">
+                            <input type="password" class="form-control" name="confirm-password" id="" required>
                         </div>
                         <div class="d-grid">
-                            <button style="background-color: #70d0df;" type="submit" class="btn btn-primary">Enviar</button>
+                            <button style="background-color: #70d0df;" type="submit" class="btn btn-primary">Registrar</button>
                         </div>
                     </form>
+                    <a href="index.php?controller=Users&action=mostrarFormularioLogin">Iniciar Sesión</a>
                 </div>
             </div>
         </div>
