@@ -10,7 +10,7 @@ class User {
 
     public function crearUsuario($email, $password) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO usuarios (email, password) VALUES (?, ?)";
+        $sql = "INSERT INTO login (email, password) VALUES (?, ?)";
         
         try {
             $stmt = $this->conn->prepare($sql);
@@ -34,7 +34,7 @@ class User {
     }
 
     public function verificarUsuario($email, $password) {
-        $sql = "SELECT password FROM usuarios WHERE email = ?";
+        $sql = "SELECT password FROM login WHERE email = ?";
         
         try {
             $stmt = $this->conn->prepare($sql);
