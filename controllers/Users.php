@@ -25,9 +25,9 @@ class Users {
             $user = new User();
             $resultado = $user->crearUsuario($email, $password);
 
-            if ($resultado) {
-                header("Location: index.php?controller=Users&action=mostrarFormularioLogin");
-                exit();
+            if ($resultado === true) {
+                $mensaje = "Usuario creado exitosamente.";
+                require 'views/resultado.php'; // Mostrar el mensaje de éxito
             } else {
                 $mensaje = "Error al crear el registro.";
                 require 'views/resultado.php';
@@ -62,7 +62,6 @@ class Users {
         session_start();
         session_destroy();
         header("Location: index.php?controller=Users&action=mostrarLogin&message=logout_success");
-        // header("Location: index.php?controller=Users&action=mostrarLogin");
         exit();
     }
 }
