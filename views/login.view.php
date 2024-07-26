@@ -11,7 +11,6 @@
     <?php include 'partials/header.php'?>
 </header>   
 <body>
-    <h1>Soy el Login</h1>
     <main>
         <div class="container w-75 rounded shadow login mt-4 mb-4">
             <div class="row align-items-stretch">
@@ -50,38 +49,6 @@
                             <span><a href="#">Recuperar Contraseña</a></span>
                         </div>
                     </form>
-                    <!--Login con cuentas-->
-                    <div class="container w-100 my-5" >
-                        <div class="row text-center">
-                            <div class="col-12">O inicia sesion con</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn btn-outline-primary w-100 my-1">
-                                    <div class="row align-items-center">
-                                        <div class="col-2 d-none d-md-block">
-                                            <img src="assets/david/img/Redes/facebook.png" width="32px" alt="">
-                                        </div>
-                                        <div class="col-12 text-center col-md-10">
-                                            Facebook
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="btn btn-outline-danger w-100 my-1">
-                                    <div class="row align-items-center">
-                                        <div class="col-2 d-none d-md-block">
-                                            <img src="assets/david/img/Redes/google.png" width="32px" alt="">
-                                        </div>
-                                        <div class="col-12 text-center col-md-10">
-                                            Google
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
