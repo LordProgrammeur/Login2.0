@@ -1,8 +1,9 @@
 <?php
 require_once 'models/User.php'; // Asegúrate de incluir la clase User
-use PHPMailer\PHPMailer;
-use PHPMailer\Exception;
-use PHPMailer\SMTP;
+require 'vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 class Users {
     public function mostrarFormularioRegistro() {
@@ -36,19 +37,19 @@ class Users {
 
             if ($resultado === true) {
                 // Enviar correo de confirmación
-                $mail = new PHPMailer\PHPMailer(true);
+                $mail = new PHPMailer(true);
                 try {
                     // Configuración del servidor SMTP
                     $mail->isSMTP();
-                    $mail->Host = 'smtp.example.com';
+                    $mail->Host = 'smtp.email.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'your_email@example.com';
-                    $mail->Password = 'your_email_password';
-                    $mail->SMTPSecure = 'tls';
+                    $mail->Username = 'petstylobog@gmail.com';
+                    $mail->Password = 'kube xkah hjrr qsse';
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port = 587;
 
                     // Configuración del correo
-                    $mail->setFrom('your_email@example.com', 'Your Name');
+                    $mail->setFrom('petstylobog@gmail.com', 'Pet Stylo');
                     $mail->addAddress($email);
                     $mail->isHTML(true);
                     $mail->Subject = 'Registro exitoso';
@@ -56,7 +57,7 @@ class Users {
 
                     $mail->send();
                     $mensaje = "Usuario creado exitosamente y correo enviado.";
-                } catch (PHPMailer\Exception $e) {
+                } catch (Exception $e) {
                     $mensaje = 'Usuario creado, pero no se pudo enviar el correo. Error: ' . $mail->ErrorInfo;
                 }
             } else {
