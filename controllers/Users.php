@@ -33,7 +33,7 @@ class Users {
             }
 
             // Comprobación de la contraseña
-            if (!preg_match('/^(?=.*[A-Z])(?=.*\W).{8,}$/', $password)) {
+            if (!preg_match('/^(?=.*[A-Z])(?=.*[@$!%*?&]\W).{8,}$/', $password)) {
                 $mensaje = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula y un signo especial.";
                 require 'views/resultado.php';
                 return;

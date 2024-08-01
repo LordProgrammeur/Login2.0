@@ -38,6 +38,13 @@ header{
     width: 220px;
 }
 
+
+.navbar-collapse {
+    z-index: 1050; /* Asegúrate de que este valor sea mayor que otros elementos de la página */
+}
+
+
+
 /*Landing page*/
 
 .seccion1 {
@@ -57,3 +64,38 @@ header{
     width: 100px;
     height: 100px;
 }
+
+/*Validación contraseña registro*/
+
+.password-rules {
+    margin-top: 15px;
+    display: none;
+    position: absolute;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px;
+    z-index: 1000;
+    width: 245px;
+    top: 60px; /* Ajusta según sea necesario */
+    left: 0;
+}
+
+.password-rules ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.password-rules li {
+    margin-bottom: 5px;
+}
+
+.password-rules .valid {
+    color: green;
+}
+
+.password-rules .invalid {
+    color: red;
+}
+
