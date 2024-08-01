@@ -32,18 +32,16 @@
             <!-- Elementos del menú colapsable -->
             <div style="background-color: #70d0df;" class="collapse navbar-collapse rounded p-4" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Citas</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a style="background-color: #ee8133;" class="btn nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Horarios</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">Lunes a Viernes: 8:00am a 6:00pm</li>
                             <li class="dropdown-item">Sábados y Domingos: 11:00am a 4:00pm</li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-link" href="#">Ayuda</a>
+                        <img style="width: 20px;" src="assets/david/img/informacion.png">
                     </li>
                 </ul>   
                 <a class="d-flex ms-auto" href="index.php?controller=Users&action=mostrarFormularioLogin">Iniciar Sesión</a>

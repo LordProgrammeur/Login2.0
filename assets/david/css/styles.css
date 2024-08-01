@@ -43,8 +43,6 @@ header{
     z-index: 1050; /* Asegúrate de que este valor sea mayor que otros elementos de la página */
 }
 
-
-
 /*Landing page*/
 
 .seccion1 {
@@ -68,16 +66,16 @@ header{
 /*Validación contraseña registro*/
 
 .password-rules {
-    margin-top: 15px;
+    margin-top: 10px; /* Reduce el margen superior si es necesario */
     display: none;
     position: absolute;
     background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
+    border: 1px solid black;
     border-radius: 0.25rem;
-    padding: 10px;
+    padding: 15px; /* Agrega un poco de padding para mejor visualización */
     z-index: 1000;
-    width: 245px;
-    top: 60px; /* Ajusta según sea necesario */
+    width: 80%; /* Ajusta el ancho al 100% del contenedor padre */
+    top: 100%; /* Posición al final del campo de entrada */
     left: 0;
 }
 
@@ -98,4 +96,5 @@ header{
 .password-rules .invalid {
     color: red;
 }
+
 

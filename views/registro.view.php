@@ -40,7 +40,7 @@
                                 <ul>
                                     <li id="length" class="invalid">• Mínimo 8 caracteres</li>
                                     <li id="uppercase" class="invalid">• Al menos una letra mayúscula</li>
-                                    <li id="special" class="invalid">• Al menos un carácter especial @$!%*?&</li>
+                                    <li id="special" class="invalid">• Al menos un carácter especial</li>
                                     <li id="match" class="invalid">• Las contraseñas coinciden</li>
                                 </ul>
                             </div>
@@ -53,7 +53,7 @@
                                 <ul>
                                     <li id="length-confirm" class="invalid">• Mínimo 8 caracteres</li>
                                     <li id="uppercase-confirm" class="invalid">• Al menos una letra mayúscula</li>
-                                    <li id="special-confirm" class="invalid">• Al menos un carácter especial @$!%*?&</li>
+                                    <li id="special-confirm" class="invalid">• Al menos un carácter especial</li>
                                     <li id="match-confirm" class="invalid">• Las contraseñas coinciden</li>
                                 </ul>
                             </div>

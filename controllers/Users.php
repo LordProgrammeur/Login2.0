@@ -33,7 +33,7 @@ class Users {
             }
 
             // Comprobación de la contraseña
-            if (!preg_match('/^(?=.*[A-Z])(?=.*[@$!%*?&]\W).{8,}$/', $password)) {
+            if (!preg_match('/^(?=.*[A-Z])(?=.*\W).{8,}$/', $password)) {
                 $mensaje = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula y un signo especial.";
                 require 'views/resultado.php';
                 return;
@@ -49,7 +49,8 @@ class Users {
                     // Configuración del servidor SMTP
                     $mail->SMTPDebug = 2; // Mostrar información de depuración detallada
                     $mail->isSMTP();
-                    $mail->Host = 'smtp.gmail.com'; // Servidor SMTP de Gmail
+                    $mail->Host = 'smtp.gmail.com';    // Servidor SMTP de Gmail
+                    $mail->Host = 'smtp.hotmail.com'; // Servidor SMTP de Hotmail
                     $mail->SMTPAuth = true;
                     $mail->Username = 'petstylobog@gmail.com'; // Tu correo de Gmail
                     $mail->Password = 'kube xkah hjrr qsse'; // Tu contraseña de aplicación de Gmail
@@ -57,7 +58,7 @@ class Users {
                     $mail->Port = 587;
 
                      // Desactivar la depuración de SMTP
-                     $mail->SMTPDebug = 0;
+                    $mail->SMTPDebug = 0;
 
                     // Configuración del correo
                     $mail->setFrom('petstylobog@gmail.com', 'Pet Stylo');
