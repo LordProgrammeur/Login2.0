@@ -1,6 +1,6 @@
 <?php
 require_once 'models/User.php'; // Asegúrate de incluir la clase User
-require 'vendor/autoload.php';
+require 'vendor/autoload.php'; // Asegúrate de incluir el autoload de Composer
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -32,6 +32,13 @@ class Users {
                 return;
             }
 
+            // Comprobación de la contraseña
+            if (!preg_match('/^(?=.*[A-Z])(?=.*\W).{8,}$/', $password)) {
+                $mensaje = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula y un signo especial.";
+                require 'views/resultado.php';
+                return;
+            }
+
             $user = new User();
             $resultado = $user->crearUsuario($email, $password);
 
@@ -48,6 +55,9 @@ class Users {
                     $mail->Password = 'kube xkah hjrr qsse'; // Tu contraseña de aplicación de Gmail
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port = 587;
+
+                     // Desactivar la depuración de SMTP
+                     $mail->SMTPDebug = 0;
 
                     // Configuración del correo
                     $mail->setFrom('petstylobog@gmail.com', 'Pet Stylo');
@@ -99,6 +109,7 @@ class Users {
         exit();
     }
 }
+
 
 ?>
 

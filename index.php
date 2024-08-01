@@ -1,9 +1,9 @@
 <?php
 require_once "models/database.php"; // Incluir configuración de la base de datos
-require_once "controllers/Users.php"; // Incluir el controlador Users
 require_once "models/User.php"; // Incluir el modelo User
-require 'vendor/autoload.php'; //Incluir composer
+require 'vendor/autoload.php'; // Incluir composer
 
+require_once "controllers/Users.php"; // Incluir el controlador Users
 
 // Verificar el controlador y la acción solicitada
 if (!isset($_REQUEST['controller'])) {
@@ -27,6 +27,8 @@ if (!isset($_REQUEST['controller'])) {
     // Llamar a la acción del controlador
     call_user_func(array($controller, $action));
 }
+
+
 
 
 
