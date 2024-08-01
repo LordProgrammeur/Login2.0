@@ -40,11 +40,12 @@ class Users {
                 $mail = new PHPMailer(true);
                 try {
                     // Configuración del servidor SMTP
+                    $mail->SMTPDebug = 2; // Mostrar información de depuración detallada
                     $mail->isSMTP();
-                    $mail->Host = 'smtp.email.com';
+                    $mail->Host = 'smtp.gmail.com'; // Servidor SMTP de Gmail
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'petstylobog@gmail.com';
-                    $mail->Password = 'kube xkah hjrr qsse';
+                    $mail->Username = 'petstylobog@gmail.com'; // Tu correo de Gmail
+                    $mail->Password = 'kube xkah hjrr qsse'; // Tu contraseña de aplicación de Gmail
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port = 587;
 
@@ -67,7 +68,6 @@ class Users {
             require 'views/resultado.php'; // Mostrar el mensaje
         }
     }
-
 
     public function procesarFormularioLogin() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
