@@ -14,7 +14,7 @@
     <?php include 'partials/header.php' ?>
 </header>
 
-<body>
+<body style="background-image: url(assets/david/img/fondo.jpg);">
     <main>
         <div class="container w-75 rounded shadow login mt-4 mb-4">
             <div class="row align-items-stretch">

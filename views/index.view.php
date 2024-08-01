@@ -8,16 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/david/css/styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body{
-            background-image: url(assets/david/img/fondo.jpg);
-        }
-    </style>
 </head>
 <header>
     <?php include 'partials/header.php'?>
 </header> 
-<body>
+<body style="background-image: url(assets/david/img/fondo.jpg);">
     
 <div class="container mt-4 seccion1">
     <div class="row justify-content-between py-4">

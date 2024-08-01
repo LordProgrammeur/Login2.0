@@ -50,7 +50,7 @@ class Users {
                     $mail->SMTPDebug = 2; // Mostrar información de depuración detallada
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';    // Servidor SMTP de Gmail
-                    $mail->Host = 'smtp.hotmail.com'; // Servidor SMTP de Hotmail
+                                                     // Servidor SMTP de Hotmail
                     $mail->SMTPAuth = true;
                     $mail->Username = 'petstylobog@gmail.com'; // Tu correo de Gmail
                     $mail->Password = 'kube xkah hjrr qsse'; // Tu contraseña de aplicación de Gmail
