@@ -1,10 +1,22 @@
-Perri si quiere crear la base de datos en mysql xampp tiene que insertar estos comandos y ya la crea y le tiene que funcionar todo: 
+Comando creacion base de datos:
 CREATE TABLE login (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+Comandos creacion base de datos con token para recuperar contraseña:
+CREATE TABLE login (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    reset_token VARCHAR(255) DEFAULT NULL,
+    token_expiry DATETIME DEFAULT NULL,
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
 HACER EL EL EMAIL SEA UNICO: 
 ALTER TABLE login ADD UNIQUE (email);
 

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet-Stylo</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/david/css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <header>
     <?php include 'partials/header.php' ?>
@@ -22,14 +26,10 @@
                         <img src="assets/david/img/tienda-en-linea.png" width="70" alt="">
                     </div>
                     <h2 class="fw-bold text-center py-5">Bienvenido</h2>
-                    <?php
-                    /*if (!empty($message)) : ?>
-                        <p><?= $message ?></p>
-                    <?php endif;*/ ?>
                     <!--Login-->
                     <form action="index.php?controller=Users&action=procesarFormularioLogin" method="POST">
                         <div class="mb-4">
-                            <label for="email" class="form-label">Correo Electronico</label>
+                            <label for="email" class="form-label">Correo Electrico</label>
                             <input type="email" class="form-control" name="email" id="">
                         </div>
                         <div class="mb-4">
@@ -41,12 +41,11 @@
                             <label for="connected" class="form-check-label">Mantenerme Conectado</label>
                         </div>
                         <div class="d-grid">
-                            <button style="background-color: #70d0df;" type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                            <button style="background-color: #70d0df;" type="submit" class="btn btn-primary">Iniciar Sesión</button>
                         </div>
                         <div class="my-3">
-                            <span>No tienes cuenta? <a href="index.php?controller=Users&action=mostrarFormularioRegistro">Regístrate</a>
-                            </span><br>
-                            <span><a href="#">Recuperar Contraseña</a></span>
+                            <span>No tienes cuenta? <a href="index.php?controller=Users&action=mostrarFormularioRegistro">Regístrate</a></span><br>
+                            <span><a href="index.php?controller=Users&action=mostrarFormularioRecuperacion">Recuperar Contraseña</a></span>
                         </div>
                     </form>
                 </div>
